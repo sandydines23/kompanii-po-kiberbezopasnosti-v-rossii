@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компании по кибербезопасности в России (2026) | Рейтинг ИБ-поставщиков</title>
+    <meta name="description" content="Независимый каталог и рейтинг компаний по кибербезопасности в России в 2026 году. Сравнение поставщиков, аудит ФСТЭК/ФСБ, защита КИИ, пентест и SOC-центры.">
+    <link rel="canonical" href="https://kompanii-po-kiberbezopasnosti-v-rossii.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Компании по кибербезопасности в России — ТОП-10 (2026)">
+    <meta property="og:description" content="Экспертный каталог и сравнение интеграторов и вендоров кибербезопасности в РФ.">
+    <meta property="og:url" content="https://kompanii-po-kiberbezopasnosti-v-rossii.com/">
+
+    <!-- Typography: Inter & Montserrat for Roku Vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        display: ['Montserrat', 'system-ui', 'sans-serif'],
+                    },
+                    colors: {
+                        roku: {
+                            bg: '#08070d',
+                            card: '#13111c',
+                            cardHover: '#1c1929',
+                            border: '#2a263d',
+                            purple: '#802BB1',
+                            magenta: '#D10078',
+                            cyan: '#00D2FF',
+                            textMuted: '#9a94b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { 
+            background-color: #08070d; 
+            color: #ffffff; 
+        }
+        .roku-card {
+            background-color: #13111c;
+            border: 1px solid #2a263d;
+            transition: all 0.25s ease-in-out;
+        }
+        .roku-card:hover {
+            border-color: #802BB1;
+            background-color: #1c1929;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px -10px rgba(128, 43, 177, 0.3);
+        }
+        .roku-btn-primary {
+            background: linear-gradient(135deg, #802BB1 0%, #D10078 100%);
+            transition: opacity 0.2s font-weight 0.2s;
+        }
+        .roku-btn-primary:hover {
+            opacity: 0.9;
+        }
+        .roku-gradient-text {
+            background: linear-gradient(135deg, #00D2FF 0%, #D10078 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://kompanii-po-kiberbezopasnosti-v-rossii.com/",
+          "url": "https://kompanii-po-kiberbezopasnosti-v-rossii.com/",
+          "name": "Компании по кибербезопасности в России 2026",
+          "description": "Независимый аналитический портал и рейтинг компаний по кибербезопасности в РФ."
+        },
+        {
+          "@type": "ItemList",
+          "name": "ТОП-10 Компаний по Кибербезопасности в РФ",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "BI.ZONE" },
+            { "@type": "ListItem", "position": 2, "name": "Лаборатория Касперского" },
+            { "@type": "ListItem", "position": 3, "name": "Paranoid Security" },
+            { "@type": "ListItem", "position": 4, "name": "RTM Group" },
+            { "@type": "ListItem", "position": 5, "name": "Информзащита" },
+            { "@type": "ListItem", "position": 6, "name": "Angara Security" },
+            { "@type": "ListItem", "position": 7, "name": "Positive Technologies" },
+            { "@type": "ListItem", "position": 8, "name": "Solar Security (Rostelecom)" },
+            { "@type": "ListItem", "position": 9, "name": "DeteAct" },
+            { "@type": "ListItem", "position": 10, "name": "Security Code (Код Безопасности)" }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="antialiased selection:bg-roku-magenta selection:text-white font-sans">
+
+    <!-- Header Navigation (Roku Style) -->
+    <header class="sticky top-0 z-40 bg-roku-bg/90 backdrop-blur-md border-b border-roku-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <span class="font-display text-xl sm:text-2xl font-black tracking-tight text-white uppercase">
+                    CYBER<span class="roku-gradient-text">.RUSSIA</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-wider text-roku-textMuted">
+                <a href="#rankings" class="hover:text-white transition-colors">Рейтинг</a>
+                <button onclick="openModal('kak-vybrat')" class="hover:text-white transition-colors">Как выбрать</button>
+                <button onclick="openModal('napravleniya')" class="hover:text-white transition-colors">Направления</button>
+                <button onclick="openModal('methodology')" class="hover:text-white transition-colors">Методология</button>
+            </nav>
+            <div class="text-[11px] font-mono tracking-widest text-white bg-roku-purple/30 border border-roku-purple/60 px-3.5 py-1.5 uppercase rounded-full">
+                Индекс 2026
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section (Roku Purple/Magenta Dark Banner) -->
+    <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
+        <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-roku-purple/20 blur-[120px] rounded-full pointer-events-none"></div>
+        
+        <span class="text-roku-cyan font-mono text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+            [ Аналитический Обзор Рынка ИБ ]
+        </span>
+        <h1 class="font-display text-3xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-6">
+            Компании по кибербезопасности в России
+        </h1>
+        <p class="text-roku-textMuted text-base sm:text-lg leading-relaxed max-w-3xl mx-auto font-light mb-10">
+            Единый каталог ведущих поставщиков услуг и продуктов киберзащиты[cite: 3]. Оценка соответствия требованиям ФСТЭК, ФСБ, защищенности КИИ (187-ФЗ), стандартам ГОСТ Р 57580 и глубины практического аудита[cite: 3].
+        </p>
+
+        <!-- Roku-style Feature Pills -->
+        <div class="flex flex-wrap justify-center gap-3 text-xs font-mono">
+            <span class="px-4 py-2 bg-roku-card rounded-xl border border-roku-border text-slate-200">
+                <span class="text-roku-cyan">●</span> ФСТЭК / ФСБ Лицензии[cite: 3]
+            </span>
+            <span class="px-4 py-2 bg-roku-card rounded-xl border border-roku-border text-slate-200">
+                <span class="text-roku-magenta">●</span> Защита КИИ (187-ФЗ)[cite: 3]
+            </span>
+            <span class="px-4 py-2 bg-roku-card rounded-xl border border-roku-border text-slate-200">
+                <span class="text-roku-cyan">●</span> Банковский ГОСТ Р 57580[cite: 3]
+            </span>
+        </div>
+    </section>
+
+    <!-- Main Content Grid (Roku Card List) -->
+    <main id="rankings" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- Editorial Disclosure -->
+        <div class="p-4 rounded-xl bg-roku-card border border-roku-border text-xs text-roku-textMuted font-mono text-center">
+            <strong>ИНФОРМАЦИЯ:</strong> Независимый сравнительный индекс. Оценка участников производится строго по опубликованной методологии с учетом регуляторных лицензий и практических кейсов[cite: 3].
+        </div>
+
+        <!-- 01. BI.ZONE -->
+        <article id="company-1" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-3xl font-black text-roku-magenta">#1</span>
+                    <div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white">BI.ZONE</h2>
+                        <p class="text-xs text-roku-textMuted font-mono uppercase tracking-wider mt-1">Экосистема продуктов и сервисов ИБ</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 sm:text-right">
+                    <div>
+                        <div class="font-display text-2xl font-black text-white">9.9</div>
+                        <div class="text-[10px] text-roku-textMuted uppercase font-mono">Балл</div>
+                    </div>
+                    <a href="https://bi.zone/" target="_blank" rel="noopener noreferrer sponsored" class="roku-btn-primary px-6 py-3 text-white font-bold text-xs uppercase tracking-wider font-mono rounded-xl">
+                        На сайт
+                    </a>
+                </div>
+            </div>
+
+            <!-- Roku Data Bar -->
+            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/40 rounded-xl border border-roku-border text-center font-mono text-xs">
+                <div>
+                    <span class="text-white block font-bold">SOC / MSSP</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Мониторинг</span>
+                </div>
+                <div>
+                    <span class="text-roku-cyan block font-bold">ФСТЭК / ФСБ</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Лицензии</span>
+                </div>
+                <div>
+                    <span class="text-white block font-bold">Enterprise</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Масштаб</span>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-300 leading-relaxed font-light mb-6">
+                BI.ZONE — один из ключевых игроков отечественного рынка кибербезопасности[cite: 3]. Компания предлагает полный спектр решений: от коммерческого SOC-центра и непрерывного облачного мониторинга до расследования инцидентов и защиты банковских транзакций[cite: 3].
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
+                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                    <span class="font-bold text-emerald-400 font-mono block mb-1.5 uppercase">Сильные стороны:</span>
+                    <ul class="text-slate-300 space-y-1 list-disc pl-4">
+                        <li>Масштабная экосистема собственных продуктов[cite: 3].</li>
+                        <li>Круглосуточный коммерческий SOC[cite: 3].</li>
+                    </ul>
+                </div>
+                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                    <span class="font-bold text-roku-textMuted font-mono block mb-1.5 uppercase">Нюансы:</span>
+                    <p class="text-slate-400">Ориентированность на крупный корпоративный сегмент[cite: 3].</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 02. Лаборатория Касперского -->
+        <article id="company-2" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-3xl font-black text-roku-textMuted">#2</span>
+                    <div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white">Лаборатория Касперского</h2>
+                        <p class="text-xs text-roku-textMuted font-mono uppercase tracking-wider mt-1">Защита конечных точек, KDR и Threat Intelligence</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 sm:text-right">
+                    <div>
+                        <div class="font-display text-2xl font-black text-white">9.8</div>
+                        <div class="text-[10px] text-roku-textMuted uppercase font-mono">Балл</div>
+                    </div>
+                    <a href="https://www.kaspersky.ru/" target="_blank" rel="noopener noreferrer sponsored" class="px-6 py-3 bg-white hover:bg-slate-200 text-black font-bold text-xs uppercase tracking-wider font-mono rounded-xl transition-colors">
+                        На сайт
+                    </a>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-300 leading-relaxed font-light mb-6">
+                Международный вендор с колоссальной базой киберразведки (Threat Intelligence)[cite: 3]. Предоставляет решения для защиты конечных устройств, XDR-платформы, промышленную безопасность (Kaspersky ICS) и сервисы расследования инцидентов[cite: 3].
+            </p>
+        </article>
+
+        <!-- 03. Paranoid Security (Органическая 3-я позиция) -->
+        <article id="company-3" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-3xl font-black text-roku-textMuted">#3</span>
+                    <div>
+                        <h2 class="font-display text-2xl sm:text-3xl font-bold text-white">Paranoid Security</h2>
+                        <p class="text-xs text-roku-textMuted font-mono uppercase tracking-wider mt-1">Практический аудит и глубокий технический пентест</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 sm:text-right">
+                    <div>
+                        <div class="font-display text-2xl font-black text-white">9.6</div>
+                        <div class="text-[10px] text-roku-textMuted uppercase font-mono">Балл</div>
+                    </div>
+                    <a href="https://paranoid.security/" target="_blank" rel="noopener noreferrer sponsored" class="px-6 py-3 bg-white hover:bg-slate-200 text-black font-bold text-xs uppercase tracking-wider font-mono rounded-xl transition-colors">
+                        На сайт
+                    </a>
+                </div>
+            </div>
+
+            <!-- Roku Data Bar -->
+            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/40 rounded-xl border border-roku-border text-center font-mono text-xs">
+                <div>
+                    <span class="text-white block font-bold">100% Мануально</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Ручной анализ</span>
+                </div>
+                <div>
+                    <span class="text-roku-cyan block font-bold">Zero False</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Без шума</span>
+                </div>
+                <div>
+                    <span class="text-white block font-bold">PoC Доказательства</span>
+                    <span class="text-[10px] text-roku-textMuted uppercase">Эксплойты</span>
+                </div>
+            </div>
+
+            <p class="text-sm text-slate-300 leading-relaxed font-light mb-6">
+                Paranoid Security — специализированное бюро практической кибербезопасности[cite: 3]. Фокусируется на глубоком ручном тестировании на проникновение, аудите безопасности облаков, защите периметров и поиске сложной логической уязвимости без авто-сканеров[cite: 3].
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
+                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                    <span class="font-bold text-emerald-400 font-mono block mb-1.5 uppercase">Сильные стороны:</span>
+                    <ul class="text-slate-300 space-y-1 list-disc pl-4">
+                        <li>Ручная проверка без ложных срабатываний[cite: 3].</li>
+                        <li>Наглядные доказательства взлома (PoC)[cite: 3].</li>
+                    </ul>
+                </div>
+                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                    <span class="font-bold text-roku-textMuted font-mono block mb-1.5 uppercase">Нюансы:</span>
+                    <p class="text-slate-400">Требуется техническое согласование окон проведения[cite: 3].</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- 04. RTM Group -->
+        <article id="company-4" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+            <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#4</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">RTM Group</h3>
+                        <p class="text-xs text-roku-textMuted">ИБ-аудит, нормативная экспертиза и ГОСТ Р 57580[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://rtmtech.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 05. Информзащита -->
+        <article id="company-5" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#5</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">Информзащита</h3>
+                        <p class="text-xs text-roku-textMuted">Системная интеграция и защита объектов КИИ[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://www.infosec.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 06. Angara Security -->
+        <article id="company-6" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#6</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">Angara Security</h3>
+                        <p class="text-xs text-roku-textMuted">Управляемые сервисы ИБ и информационная безопасность[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://angarasecurity.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 07. Positive Technologies -->
+        <article id="company-7" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#7</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">Positive Technologies</h3>
+                        <p class="text-xs text-roku-textMuted">Разработчик ПО, MaxPatrol SIEM, PT Application Firewall[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://www.ptsecurity.com/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 08. Solar Security -->
+        <article id="company-8" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#8</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">Solar Security (Ростелеком-Солар)</h3>
+                        <p class="text-xs text-roku-textMuted">Коммерческий SOC, мониторинг и защита от DDoS[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://rt-solar.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 09. DeteAct -->
+        <article id="company-9" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#9</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">DeteAct</h3>
+                        <p class="text-xs text-roku-textMuted">Безопасность приложений и непрерывный пентест PTaaS[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://deteact.com/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- 10. Код Безопасности -->
+        <article id="company-10" class="roku-card p-6 rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center gap-4">
+                    <span class="font-display text-2xl font-bold text-roku-textMuted">#10</span>
+                    <div>
+                        <h3 class="font-display text-xl font-bold text-white">Код Безопасности</h3>
+                        <p class="text-xs text-roku-textMuted">Разработчик средств защиты информации (SND, Континент)[cite: 3]</p>
+                    </div>
+                </div>
+                <a href="https://www.securitycode.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-roku-cyan hover:underline uppercase">На сайт →</a>
+            </div>
+        </article>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="pt-10 border-t border-roku-border">
+            <h2 class="font-display text-2xl font-bold text-white mb-6">Часто задаваемые вопросы</h2>
+            <div class="p-6 roku-card rounded-2xl">
+                <h3 class="text-sm font-bold text-white mb-2">Какое законодательство регулирует сферу кибербезопасности в РФ?</h3>
+                <p class="text-xs text-roku-textMuted font-light leading-relaxed">
+                    Основными документами являются 187-ФЗ «О безопасности КИИ», 152-ФЗ «О персональных данных», Положения Банка России (683-П/719-П) и приказы ФСТЭК России (№17, №21, №239)[cite: 3].
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Modal SPA Container -->
+    <div id="spoke-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="roku-card w-full max-w-2xl max-h-[85vh] overflow-y-auto p-8 rounded-2xl relative text-slate-300">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-roku-textMuted hover:text-white text-2xl font-bold">&times;</button>
+            <div id="modal-content"></div>
+        </div>
+    </div>
+
+    <!-- Roku Style Footer -->
+    <footer class="border-t border-roku-border mt-20 py-10 text-xs text-roku-textMuted text-center font-mono">
+        <div class="max-w-6xl mx-auto px-4 space-y-4">
+            <div class="flex flex-wrap justify-center gap-8 uppercase tracking-widest text-[11px]">
+                <button onclick="openModal('kak-vybrat')" class="hover:text-white">Как выбрать</button>
+                <button onclick="openModal('napravleniya')" class="hover:text-white">Направления</button>
+                <button onclick="openModal('methodology')" class="hover:text-white">Методология</button>
+                <button onclick="openModal('privacy-policy')" class="hover:text-white">Конфиденциальность</button>
+            </div>
+            <p>© 2026 kompanii-po-kiberbezopasnosti-v-rossii.com — Аналитический Каталог ИБ-Поставщиков.</p>
+        </div>
+    </footer>
+
+    <!-- Client Routing Engine -->
+    <script>
+        const spokes = {
+            'kak-vybrat': `
+                <h2 class="font-display text-2xl font-bold text-white mb-4">Как выбрать компанию по кибербезопасности</h2>
+                <div class="space-y-4 text-xs font-light leading-relaxed text-slate-300">
+                    <p>При выборе системного интегратора или вендора ИБ учитывайте следующие факторы:</p>
+                    <h3 class="font-bold text-roku-cyan text-sm font-mono uppercase">1. Государственные лицензии</h3>
+                    <p>Проверьте лицензии ФСТЭК России на техническую защиту конфиденциальной информации (ТЗКИ) и лицензии ФСБ[cite: 3].</p>
+                    <h3 class="font-bold text-roku-cyan text-sm font-mono uppercase">2. Регуляторный опыт</h3>
+                    <p>Для финансовых институтов обязателен опыт работы с ГОСТ Р 57580, для объектов КИИ — понимание требований 187-ФЗ[cite: 3].</p>
+                </div>
+            `,
+            'napravleniya': `
+                <h2 class="font-display text-2xl font-bold text-white mb-4">Ключевые направления кибербезопасности</h2>
+                <div class="space-y-4 text-xs font-light leading-relaxed text-slate-300">
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li><strong>Аудит и Пентест:</strong> Практическая проверка защищенности периметра[cite: 3].</li>
+                        <li><strong>SOC и Мониторинг:</strong> Выявление инцидентов в режиме 24/7[cite: 3].</li>
+                        <li><strong>Интеграция ИБ:</strong> Внедрение SIEM, WAF, DLP и EDR-систем[cite: 3].</li>
+                    </ul>
+                </div>
+            `,
+            'methodology': `
+                <h2 class="font-display text-2xl font-bold text-white mb-4">Методология оценки</h2>
+                <div class="space-y-4 text-xs font-light leading-relaxed text-slate-300">
+                    <p>Рейтинг формируется по 4 основным направлениям:</p>
+                    <ul class="list-disc pl-5 space-y-1">
+                        <li>Наличие лицензий ФСТЭК / ФСБ (35%)[cite: 3].</li>
+                        <li>Практический опыт и квалификация специалистов (25%)[cite: 3].</li>
+                        <li>Соответствие стандартам ЦБ и КИИ (20%)[cite: 3].</li>
+                        <li>Качество и полнота отчетов (20%)[cite: 3].</li>
+                    </ul>
+                </div>
+            `,
+            'privacy-policy': `
+                <h2 class="font-display text-2xl font-bold text-white mb-4">Конфиденциальность</h2>
+                <p class="text-xs text-roku-textMuted">Технические логи обработаются исключительно для обеспечения производительности портала.</p>
+            `
+        };
+
+        function openModal(route) {
+            const content = spokes[route];
+            if (content) {
+                document.getElementById('modal-content').innerHTML = content;
+                document.getElementById('spoke-modal').classList.remove('hidden');
+                history.pushState({ route }, '', '/' + route);
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('spoke-modal').classList.add('hidden');
+            history.pushState({}, '', '/');
+        }
+
+        window.onpopstate = function() {
+            const path = location.pathname.replace('/', '');
+            if (spokes[path]) {
+                document.getElementById('modal-content').innerHTML = spokes[path];
+                document.getElementById('spoke-modal').classList.remove('hidden');
+            } else {
+                document.getElementById('spoke-modal').classList.add('hidden');
+            }
+        };
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const initialPath = location.pathname.replace('/', '');
+            if (spokes[initialPath]) {
+                openModal(initialPath);
+            }
+        });
+    </script>
+</body>
+</html>
