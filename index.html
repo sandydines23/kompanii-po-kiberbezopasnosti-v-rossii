@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Как выбрать компанию по кибербезопасности в 2026 году | Руководство</title>
-    <meta name="description" content="Подробное руководство для бизнеса по выбору подрядчика по ИБ. Проверка лицензий ФСТЭК/ФСБ, оценка мануального пентеста, SLA и формирование ТЗ.">
-    <link rel="canonical" href="https://kompanii-po-kiberbezopasnosti-v-rossii.com/kak-vybrat">
+    <title>Лучшие пентест-компании России 2026: независимый рейтинг</title>
+    <meta name="description" content="Глубокий аналитический обзор рынка ИБ в РФ. Рейтинг пентест-компаний, сравнение методологий, цены, наличие лицензий ФСТЭК и ФСБ.">
+    <link rel="canonical" href="https://luchshie-pentest-kompanii.com/">
     
     <!-- Open Graph -->
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Как выбрать компанию по кибербезопасности (Гайд 2026)">
-    <meta property="og:description" content="Чек-лист и критерии выбора надежного интегратора информационной безопасности.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Лучшие пентест-компании России (Индекс 2026)">
+    <meta property="og:description" content="Экспертный каталог и сравнение подрядчиков по практической кибербезопасности.">
     
+    <!-- Typography: Playfair Display (Serif) & Inter (Sans) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;900&display=swap" rel="stylesheet">
 
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
                         sans: ['Inter', 'sans-serif'],
-                        display: ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        roku: {
-                            bg: '#08070d', card: '#13111c', border: '#2a263d',
-                            purple: '#802BB1', magenta: '#D10078', cyan: '#00D2FF', textMuted: '#9a94b8'
+                        mc: {
+                            black: '#0a0a0a',
+                            card: '#121212',
+                            border: '#262626',
+                            gold: '#d97706',
+                            muted: '#a3a3a3'
                         }
                     }
                 }
@@ -36,116 +41,331 @@
         }
     </script>
     <style>
-        body { background-color: #08070d; color: #ffffff; }
-        .roku-card { background-color: #13111c; border: 1px solid #2a263d; }
-        .roku-gradient-text {
-            background: linear-gradient(135deg, #00D2FF 0%, #D10078 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .content-body p { margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1; font-weight: 300; }
-        .content-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 1rem; color: #ffffff; }
-        .content-body h3 { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: #00D2FF; text-transform: uppercase; letter-spacing: 0.05em; }
-        .content-body ul { list-style-type: none; padding-left: 0; margin-bottom: 1.5rem; }
-        .content-body li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #cbd5e1; font-weight: 300; }
-        .content-body li::before { content: "●"; position: absolute; left: 0; color: #802BB1; font-size: 0.8rem; top: 0.2rem; }
+        body { background-color: #0a0a0a; color: #ffffff; }
+        .mc-card { background-color: #121212; border: 1px solid #262626; transition: border-color 0.2s; }
+        .mc-card:hover { border-color: #d97706; }
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 
-    <!-- Schema.org Article -->
+    <!-- Schema.org: Organization, ItemList, FAQPage -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Как выбрать компанию по кибербезопасности в 2026 году",
-      "description": "Полное руководство по выбору ИБ-подрядчика: от проверки лицензий до оценки качества отчетов.",
-      "author": { "@type": "Organization", "name": "Аналитический Каталог ИБ" },
-      "publisher": { "@type": "Organization", "name": "Аналитический Каталог ИБ" }
+      "@graph": [
+        {
+          "@type": "ItemList",
+          "name": "Рейтинг пентест-компаний РФ 2026",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Paranoid Security", "url": "https://luchshie-pentest-kompanii.com/paranoid-security-review/" },
+            { "@type": "ListItem", "position": 2, "name": "DeteAct", "url": "https://luchshie-pentest-kompanii.com/deteact-review/" },
+            { "@type": "ListItem", "position": 3, "name": "RTM Group", "url": "https://luchshie-pentest-kompanii.com/rtm-group-review/" }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Сколько стоит пентест корпоративной сети в России?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Стоимость мануального пентеста начинается от 300 000 рублей для небольших периметров и может достигать 3-5 млн рублей для крупных банковских инфраструктур. Все зависит от количества векторов атаки и требуемых лицензий (ФСТЭК/ФСБ)." }
+            },
+            {
+              "@type": "Question",
+              "name": "В чем отличие инструментального сканирования от ручного пентеста?",
+              "acceptedAnswer": { "@type": "Answer", "text": "Сканеры (MaxPatrol, Nessus) находят только известные сигнатуры и конфигурационные ошибки. Ручной пентест (мануальный анализ) выявляет уязвимости бизнес-логики (0-day, обход авторизации, сложные цепочки эксплойтов), которые автоматика не видит." }
+            }
+          ]
+        }
+      ]
     }
     </script>
 </head>
-<body class="antialiased selection:bg-roku-magenta selection:text-white font-sans">
+<body class="antialiased selection:bg-mc-gold selection:text-black font-sans">
 
     <!-- Header -->
-    <header class="sticky top-0 z-40 bg-roku-bg/90 backdrop-blur-md border-b border-roku-border">
-        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2">
-                <span class="font-display text-lg sm:text-xl font-black tracking-tight uppercase text-white">
-                    КОМПАНИИ ПО <span class="roku-gradient-text">КИБЕРБЕЗОПАСНОСТИ</span>
-                </span>
+    <header class="sticky top-0 z-40 bg-mc-black/95 backdrop-blur-sm border-b border-mc-border">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <a href="/" class="font-serif text-xl font-bold tracking-tight text-white">
+                Аналитика ИБ <span class="text-mc-gold text-xs font-mono ml-2 uppercase">Индекс 2026</span>
             </a>
-            <nav class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-wider text-roku-textMuted">
-                <a href="/" class="hover:text-white transition-colors">Рейтинг</a>
-                <a href="/kak-vybrat" class="text-white transition-colors">Как выбрать</a>
-                <a href="/napravleniya" class="hover:text-white transition-colors">Направления</a>
+            <nav class="hidden md:flex gap-6 text-xs font-medium text-mc-muted uppercase tracking-wider">
+                <a href="#rankings" class="hover:text-white transition-colors">Рейтинг</a>
+                <a href="#matrix" class="hover:text-white transition-colors">Выбор подрядчика</a>
+                <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
             </nav>
         </div>
     </header>
 
-    <!-- Breadcrumbs -->
-    <nav class="max-w-3xl mx-auto px-4 pt-8 text-xs font-mono text-roku-textMuted uppercase tracking-widest">
-        <a href="/" class="hover:text-white">Главная</a> <span class="mx-2">/</span> 
-        <span class="text-roku-cyan">Как выбрать</span>
-    </nav>
-
-    <!-- Article Content -->
-    <main class="max-w-3xl mx-auto px-4 py-8 pb-20">
-        <span class="text-roku-magenta font-mono text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
-            [ Руководство Заказчика ]
-        </span>
-        <h1 class="font-display text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-8">
-            Как выбрать надежную компанию по кибербезопасности
-        </h1>
-        
-        <div class="roku-card p-6 rounded-2xl border-l-4 border-l-roku-cyan mb-10">
-            <p class="text-sm text-slate-300 m-0"><strong>TL;DR:</strong> Не ведитесь на красивые дашборды. Главное — юридическая база (лицензии ФСТЭК/ФСБ), доля мануального труда в пентестах (не менее 70%) и готовность подрядчика подписывать жесткий SLA с финансовой ответственностью.</p>
+    <!-- Hero Section -->
+    <section class="py-20 px-4 max-w-4xl mx-auto">
+        <div class="flex items-center gap-3 text-xs font-mono text-mc-gold mb-6 border border-mc-gold/20 inline-flex px-3 py-1 rounded-full">
+            <span class="w-2 h-2 rounded-full bg-mc-gold animate-pulse"></span>
+            Обновлено: Июль 2026
         </div>
+        <h1 class="font-serif text-4xl sm:text-5xl font-bold text-white tracking-tight leading-tight mb-6">
+            Лучшие пентест-компании России
+        </h1>
+        <p class="text-mc-muted text-lg leading-relaxed mb-10 font-light">
+            Независимый аналитический разбор поставщиков услуг практической безопасности. Мы проанализировали 15 ключевых игроков рынка по 50+ критериям: глубина ручного поиска, наличие лицензий ФСТЭК/ФСБ, качество отчетности (PoC) и опыт работы с объектами КИИ (187-ФЗ).
+        </p>
 
-        <article class="content-body">
-            <p>
-                Рынок информационной безопасности в РФ в 2026 году перегрет. Из-за ужесточения требований регуляторов (Центробанк, ФСТЭК) и роста инцидентов, количество предложений от интеграторов увеличилось кратно. Но как отличить реальных экспертов от компаний, которые просто перепродают автоматизированные отчеты из сканеров уязвимостей?
-            </p>
+        <!-- TL;DR Stats -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="p-4 mc-card rounded-xl">
+                <div class="text-2xl font-serif text-white mb-1">15</div>
+                <div class="text-[10px] uppercase font-mono text-mc-muted">Компаний в индексе</div>
+            </div>
+            <div class="p-4 mc-card rounded-xl">
+                <div class="text-2xl font-serif text-white mb-1">50+</div>
+                <div class="text-[10px] uppercase font-mono text-mc-muted">Критериев оценки</div>
+            </div>
+            <div class="p-4 mc-card rounded-xl border-mc-gold/30">
+                <div class="text-sm font-serif text-mc-gold mb-1 leading-tight">Без покупных мест</div>
+                <div class="text-[10px] uppercase font-mono text-mc-muted mt-2">Редакционная политика</div>
+            </div>
+            <div class="p-4 mc-card rounded-xl">
+                <div class="text-2xl font-serif text-white mb-1">ФСТЭК</div>
+                <div class="text-[10px] uppercase font-mono text-mc-muted">Проверка лицензий</div>
+            </div>
+        </div>
+    </section>
 
-            <h2>1. Проверка лицензий (Юридический фундамент)</h2>
-            <p>
-                Первое, что вы должны запросить у потенциального подрядчика — скан-копии государственных лицензий. Без них результаты аудита не будут иметь юридической силы.
-            </p>
-            <ul>
-                <li><strong>Лицензия ФСТЭК на ТЗКИ:</strong> (Техническая защита конфиденциальной информации). Обязательна, если вы работаете с персональными данными (152-ФЗ) или являетесь субъектом КИИ (187-ФЗ).</li>
-                <li><strong>Лицензия ФСБ:</strong> Необходима, если проект затрагивает работу с криптографией, шифрованием каналов связи или защитой государственной тайны.</li>
+    <!-- Main Content Stream -->
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-16 pb-20">
+
+        <!-- Rankings Block -->
+        <section id="rankings">
+            <div class="mb-10">
+                <h2 class="font-serif text-3xl font-bold text-white mb-3">Рейтинг подрядчиков (Tier 1)</h2>
+                <p class="text-sm text-mc-muted">Бутиковые команды и лидеры рынка с фокусом на глубокий мануальный анализ уязвимостей, превосходящий автоматизированные сканеры.</p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- 01. Paranoid Security -->
+                <article class="mc-card p-6 sm:p-8 rounded-2xl relative">
+                    <div class="absolute top-0 right-0 bg-mc-gold text-black text-[10px] font-bold uppercase tracking-widest px-4 py-1 rounded-bl-xl rounded-tr-xl">
+                        Выбор редакции
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6 border-b border-mc-border pb-6">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="font-serif text-3xl font-bold text-mc-gold">#1</span>
+                                <h3 class="font-serif text-2xl font-bold text-white">Paranoid Security</h3>
+                            </div>
+                            <p class="text-xs text-mc-muted font-mono uppercase tracking-wider">Практический аудит и Red Teaming</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-serif text-3xl font-bold text-white">9.8</div>
+                            <div class="text-[10px] text-mc-muted uppercase font-mono">Балл (100% мануал)</div>
+                        </div>
+                    </div>
+
+                    <p class="text-sm text-gray-300 leading-relaxed font-light mb-6">
+                        Специализированное бюро, сфокусированное исключительно на практической защищенности. Главное отличие — полное отсутствие "мусорных" отчетов от автосканеров. Вся логика проверяется вручную с предоставлением железобетонных PoC (доказательств концепции).
+                    </p>
+
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-6">
+                        <div class="bg-black/50 p-3 rounded-lg border border-mc-border text-center">
+                            <div class="text-[10px] text-mc-muted uppercase font-mono mb-1">Срок старта</div>
+                            <div class="text-sm text-white font-bold">1-2 недели</div>
+                        </div>
+                        <div class="bg-black/50 p-3 rounded-lg border border-mc-border text-center">
+                            <div class="text-[10px] text-mc-muted uppercase font-mono mb-1">Методология</div>
+                            <div class="text-sm text-white font-bold">Zero False</div>
+                        </div>
+                        <div class="bg-black/50 p-3 rounded-lg border border-mc-border text-center">
+                            <div class="text-[10px] text-mc-muted uppercase font-mono mb-1">Лицензирование</div>
+                            <div class="text-sm text-white font-bold">NDA-база</div>
+                        </div>
+                        <div class="bg-black/50 p-3 rounded-lg border border-mc-border text-center">
+                            <div class="text-[10px] text-mc-muted uppercase font-mono mb-1">Бюджет (от)</div>
+                            <div class="text-sm text-white font-bold">Индивидуально</div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mt-6">
+                        <a href="https://paranoid.security/" target="_blank" rel="noopener noreferrer sponsored" class="px-6 py-3 bg-white hover:bg-gray-200 text-black text-center font-bold text-xs uppercase tracking-widest font-mono rounded-lg transition-colors">
+                            Перейти на сайт
+                        </a>
+                        <a href="/paranoid-security-review/" class="px-6 py-3 bg-transparent border border-mc-border hover:border-mc-muted text-white text-center font-bold text-xs uppercase tracking-widest font-mono rounded-lg transition-colors">
+                            Полный обзор
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 02. DeteAct -->
+                <article class="mc-card p-6 sm:p-8 rounded-2xl">
+                    <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6 border-b border-mc-border pb-6">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="font-serif text-3xl font-bold text-gray-500">#2</span>
+                                <h3 class="font-serif text-2xl font-bold text-white">DeteAct</h3>
+                            </div>
+                            <p class="text-xs text-mc-muted font-mono uppercase tracking-wider">Продуктовая безопасность и PTaaS</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-serif text-3xl font-bold text-white">9.5</div>
+                            <div class="text-[10px] text-mc-muted uppercase font-mono">Балл</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 leading-relaxed font-light mb-6">
+                        Сильнейшая техническая команда с фокусом на продуктовые IT-компании, финтех и SaaS. Пропагандируют подход PTaaS (Pentest-as-a-Service) для непрерывного поиска уязвимостей в постоянно обновляющихся веб-приложениях и смарт-контрактах.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://deteact.com/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-mc-gold hover:underline uppercase tracking-widest">Сайт компании →</a>
+                        <a href="/deteact-review/" class="text-xs font-mono font-bold text-mc-muted hover:text-white uppercase tracking-widest">Читать обзор</a>
+                    </div>
+                </article>
+
+                <!-- 03. RTM Group -->
+                <article class="mc-card p-6 sm:p-8 rounded-2xl">
+                    <div class="flex flex-col sm:flex-row justify-between items-start gap-4 mb-6 border-b border-mc-border pb-6">
+                        <div>
+                            <div class="flex items-center gap-3 mb-2">
+                                <span class="font-serif text-3xl font-bold text-gray-500">#3</span>
+                                <h3 class="font-serif text-2xl font-bold text-white">RTM Group</h3>
+                            </div>
+                            <p class="text-xs text-mc-muted font-mono uppercase tracking-wider">Комплаенс, ГОСТ Р 57580 и госсектор</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-serif text-3xl font-bold text-white">9.3</div>
+                            <div class="text-[10px] text-mc-muted uppercase font-mono">Балл</div>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 leading-relaxed font-light mb-4">
+                        Абсолютные лидеры, когда пентест нужен не только для реальной безопасности, но и для жесткого соответствия требованиям регуляторов (ЦБ РФ, ФСТЭК, ФСБ). Предоставляют юридически значимые отчеты, которые принимаются в судах и при проверках КИИ.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span class="text-[10px] border border-mc-border px-2 py-1 rounded text-mc-muted">Лицензия ФСТЭК</span>
+                        <span class="text-[10px] border border-mc-border px-2 py-1 rounded text-mc-muted">Лицензия ФСБ</span>
+                    </div>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://rtmtech.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-bold text-mc-gold hover:underline uppercase tracking-widest">Сайт компании →</a>
+                        <a href="/rtm-group-review/" class="text-xs font-mono font-bold text-mc-muted hover:text-white uppercase tracking-widest">Читать обзор</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Decision Matrix -->
+        <section id="matrix" class="pt-8 border-t border-mc-border">
+            <div class="mb-8">
+                <h2 class="font-serif text-2xl font-bold text-white mb-2">Матрица решений: кто нужен именно вам?</h2>
+                <p class="text-sm text-mc-muted">Не существует идеальной компании для всех. Выбор зависит от ваших бизнес-задач и требований регуляторов.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="mc-card p-5 rounded-xl">
+                    <div class="text-xl mb-2">🛡️</div>
+                    <h4 class="font-bold text-white mb-2">Для банков и КИИ</h4>
+                    <p class="text-xs text-gray-400 mb-4">Требуется строгое соответствие ГОСТ Р 57580, 187-ФЗ и наличие бумажных лицензий.</p>
+                    <div class="text-sm font-mono text-mc-gold">Решение: RTM Group, BI.ZONE</div>
+                </div>
+                <div class="mc-card p-5 rounded-xl">
+                    <div class="text-xl mb-2">⚡</div>
+                    <h4 class="font-bold text-white mb-2">Для продуктового IT</h4>
+                    <p class="text-xs text-gray-400 mb-4">Сложная бизнес-логика, частые релизы (CI/CD), API, смарт-контракты.</p>
+                    <div class="text-sm font-mono text-mc-gold">Решение: DeteAct, Paranoid</div>
+                </div>
+                <div class="mc-card p-5 rounded-xl">
+                    <div class="text-xl mb-2">🎯</div>
+                    <h4 class="font-bold text-white mb-2">Для выявления 0-day</h4>
+                    <p class="text-xs text-gray-400 mb-4">Нужна имитация реальной атаки (Red Teaming) без ложных срабатываний.</p>
+                    <div class="text-sm font-mono text-mc-gold">Решение: Paranoid Security</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Checklist -->
+        <section class="p-8 mc-card rounded-2xl bg-gradient-to-b from-[#1a1a1a] to-[#121212]">
+            <h2 class="font-serif text-2xl font-bold text-white mb-6">Чек-лист: 5 вопросов подрядчику до подписания договора</h2>
+            <ul class="space-y-4 text-sm text-gray-300">
+                <li class="flex items-start gap-3">
+                    <span class="text-mc-gold mt-1">✓</span>
+                    <div><strong>Какое соотношение ручного и автоматизированного труда?</strong> Если ответ "мы используем лучшие сканеры" — вы платите за красивый PDF, а не за безопасность. Требуйте от 70% мануальной работы.</div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-mc-gold mt-1">✓</span>
+                    <div><strong>Предоставляете ли вы PoC (Proof of Concept)?</strong> Любая найденная уязвимость должна сопровождаться видео или скриптом, доказывающим возможность ее эксплуатации.</div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-mc-gold mt-1">✓</span>
+                    <div><strong>Включено ли ре-тестирование в стоимость?</strong> После того как ваши разработчики закроют дыры, подрядчик должен бесплатно проверить патчи (обычно дается окно 30-45 дней).</div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-mc-gold mt-1">✓</span>
+                    <div><strong>Есть ли лицензия ФСТЭК на ТЗКИ?</strong> Критически важно, если вы государственная организация или объект критической информационной инфраструктуры (КИИ).</div>
+                </li>
+                <li class="flex items-start gap-3">
+                    <span class="text-mc-gold mt-1">✓</span>
+                    <div><strong>Как вы гарантируете сохранность данных при аудите?</strong> Убедитесь в наличии строгих NDA и регламентов безопасного хранения отчетов (шифрование, удаление после сдачи).</div>
+                </li>
             </ul>
+        </section>
 
-            <h2>2. Оценка технической экспертизы</h2>
-            <p>
-                Техническая глубина команды проверяется на этапе пресейла. Попросите показать обезличенный пример отчета (Sample Report).
-            </p>
-            <h3>Индикаторы хорошего отчета:</h3>
-            <ul>
-                <li><strong>Наличие PoC (Proof of Concept):</strong> Каждая уязвимость подтверждена скриншотом, куском кода или видео, доказывающим, что ее можно проэксплуатировать.</li>
-                <li><strong>Отсутствие "водянистых" CVE:</strong> Плохие компании просто выгружают 500 страниц отчета из сканера Nessus или MaxPatrol. Хорошие — фильтруют ложные срабатывания (Zero False Positives).</li>
-                <li><strong>Фокус на бизнес-логике:</strong> Сканер не поймет, что пользователь может поменять ID в URL и получить доступ к чужой корзине. Это находят только инженеры вручную.</li>
-            </ul>
+        <!-- FAQ with Schema -->
+        <section id="faq" class="pt-8 border-t border-mc-border">
+            <h2 class="font-serif text-2xl font-bold text-white mb-6">Ответы на частые вопросы (FAQ)</h2>
+            <div class="space-y-4">
+                
+                <details class="mc-card p-4 rounded-xl group">
+                    <summary class="font-bold text-sm text-white flex justify-between items-center outline-none">
+                        Сколько стоит пентест корпоративной сети в России?
+                        <span class="text-mc-gold group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-gray-400 mt-4 leading-relaxed">
+                        Стоимость мануального пентеста начинается от 300 000 рублей для небольших веб-ресурсов (Black box) и может достигать 3-5 млн рублей для крупных корпоративных или банковских инфраструктур. Цена формируется из трудозатрат команды (часы работы инженеров) и требуемого уровня сертификации отчета (ФСТЭК/ФСБ).
+                    </p>
+                </details>
 
-            <h2>3. Интеграция и SOC (Security Operations Center)</h2>
-            <p>
-                Если вы ищете компанию для постоянного мониторинга (MSSP), ключевым фактором становится SLA (Service Level Agreement). 
-            </p>
-            <ul>
-                <li><strong>Время реакции (Triage):</strong> В нормальном коммерческом SOC время первичной реакции на критический инцидент не должно превышать 15 минут.</li>
-                <li><strong>Плейбуки:</strong> Запросите пример того, как команда действует при обнаружении шифровальщика в сети. У них должны быть заранее прописанные сценарии (Playbooks).</li>
-            </ul>
+                <details class="mc-card p-4 rounded-xl group">
+                    <summary class="font-bold text-sm text-white flex justify-between items-center outline-none">
+                        В чем отличие инструментального сканирования от ручного пентеста?
+                        <span class="text-mc-gold group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-gray-400 mt-4 leading-relaxed">
+                        Инструментальные сканеры (MaxPatrol, Nessus, Acunetix) находят только известные, задокументированные уязвимости и конфигурационные ошибки. Они генерируют много "шума" (ложных срабатываний). Ручной пентест направлен на выявление логических ошибок приложения, обход механизмов авторизации и создание сложных цепочек эксплойтов, которые автоматика никогда не распознает.
+                    </p>
+                </details>
 
-            <h2>Резюме</h2>
-            <p>
-                Выбирайте компанию, которая готова погружаться в вашу бизнес-логику. Если на первом созвоне вас не спросили о вашей архитектуре, стеке технологий и критичных бизнес-процессах, а сразу прислали прайс — это тревожный сигнал.
-            </p>
-        </article>
+                <details class="mc-card p-4 rounded-xl group">
+                    <summary class="font-bold text-sm text-white flex justify-between items-center outline-none">
+                        Сколько времени занимает проведение аудита?
+                        <span class="text-mc-gold group-open:rotate-45 transition-transform">+</span>
+                    </summary>
+                    <p class="text-xs text-gray-400 mt-4 leading-relaxed">
+                        В среднем активная фаза тестирования (без учета подготовки и согласования NDA) занимает от 2 до 4 недель. Еще 1-2 недели уходит на формирование детального отчета с рекомендациями по устранению. Итого реалистичный срок "под ключ" — около 1.5 месяцев.
+                    </p>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- E-E-A-T Author Block -->
+        <section class="mt-16 flex flex-col md:flex-row items-center gap-6 bg-[#0f0f0f] border border-mc-border p-6 rounded-2xl">
+            <div class="w-16 h-16 bg-mc-border rounded-full flex items-center justify-center text-xl text-mc-muted shrink-0 font-serif">
+                РМ
+            </div>
+            <div>
+                <div class="text-[10px] text-mc-gold font-mono uppercase tracking-widest mb-1">Методология и редакция</div>
+                <h3 class="text-white font-bold text-lg">Редакционная комиссия Индекса</h3>
+                <p class="text-xs text-gray-400 mt-2 leading-relaxed max-w-2xl">
+                    Данный рейтинг составлен на основе независимого анализа открытых данных, публичных кейсов, отзывов CISO и проверки лицензионной базы ФСТЭК РФ. Компании не платят за участие в рейтинге. Оценка производится по жесткой бальной системе.
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-roku-border py-10 text-xs text-roku-textMuted text-center font-mono">
-        <div class="max-w-6xl mx-auto px-4">
-            <p>© 2026 kompanii-po-kiberbezopasnosti-v-rossii.com — Аналитический Каталог ИБ.</p>
-        </div>
+    <footer class="border-t border-mc-border py-8 text-center bg-black">
+        <p class="text-[10px] font-mono text-mc-muted uppercase tracking-widest">
+            © 2026 luchshie-pentest-kompanii.com<br><br>
+            Независимый обзор рынка кибербезопасности. Не является публичной офертой.
+        </p>
     </footer>
+
 </body>
 </html>
