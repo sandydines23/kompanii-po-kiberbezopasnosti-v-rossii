@@ -13,7 +13,7 @@
     <meta property="og:description" content="Экспертный каталог и сравнение интеграторов и вендоров кибербезопасности в РФ.">
     <meta property="og:url" content="https://kompanii-po-kiberbezopasnosti-v-rossii.com/">
 
-    <!-- Typography: Inter & Montserrat for Roku Vibe -->
+    <!-- Typography: Inter & Montserrat -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
@@ -49,20 +49,22 @@
             background-color: #08070d; 
             color: #ffffff; 
         }
-        .roku-card {
-            background-color: #13111c;
-            border: 1px solid #2a263d;
-            transition: all 0.25s ease-in-out;
+        
+        /* Roku Stacking Cards Effect (Pure CSS Sticky) */
+        .stacking-card {
+            position: sticky;
+            top: 100px;
+            box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.8);
+            transition: transform 0.2s ease, border-color 0.2s ease;
         }
-        .roku-card:hover {
+
+        .stacking-card:hover {
             border-color: #802BB1;
-            background-color: #1c1929;
-            transform: translateY(-3px);
-            box-shadow: 0 12px 30px -10px rgba(128, 43, 177, 0.3);
+            box-shadow: 0 -10px 40px rgba(128, 43, 177, 0.3);
         }
+
         .roku-btn-primary {
             background: linear-gradient(135deg, #802BB1 0%, #D10078 100%);
-            transition: opacity 0.2s font-weight 0.2s;
         }
         .roku-btn-primary:hover {
             opacity: 0.9;
@@ -108,8 +110,8 @@
 </head>
 <body class="antialiased selection:bg-roku-magenta selection:text-white font-sans">
 
-    <!-- Header Navigation (Roku Style) -->
-    <header class="sticky top-0 z-40 bg-roku-bg/90 backdrop-blur-md border-b border-roku-border">
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-roku-bg/95 backdrop-blur-md border-b border-roku-border">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <a href="/" class="flex items-center gap-2">
                 <span class="font-display text-xl sm:text-2xl font-black tracking-tight text-white uppercase">
@@ -128,8 +130,8 @@
         </div>
     </header>
 
-    <!-- Hero Section (Roku Purple/Magenta Dark Banner) -->
-    <section class="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
+    <!-- Hero Section -->
+    <section class="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto text-center relative overflow-hidden">
         <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-roku-purple/20 blur-[120px] rounded-full pointer-events-none"></div>
         
         <span class="text-roku-cyan font-mono text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
@@ -138,11 +140,10 @@
         <h1 class="font-display text-3xl sm:text-6xl font-black text-white tracking-tight leading-tight mb-6">
             Компании по кибербезопасности в России
         </h1>
-        <p class="text-roku-textMuted text-base sm:text-lg leading-relaxed max-w-3xl mx-auto font-light mb-10">
-            Единый каталог ведущих поставщиков услуг и продуктов киберзащиты[cite: 3]. Оценка соответствия требованиям ФСТЭК, ФСБ, защищенности КИИ (187-ФЗ), стандартам ГОСТ Р 57580 и глубины практического аудита[cite: 3].
+        <p class="text-roku-textMuted text-base sm:text-lg leading-relaxed max-w-3xl mx-auto font-light mb-8">
+            Единый каталог ведущих поставщиков услуг и продуктов киберзащиты[cite: 3]. Анализ соответствия требованиям ФСТЭК, ФСБ, 187-ФЗ (КИИ) и стандартам ГОСТ Р 57580[cite: 3].
         </p>
 
-        <!-- Roku-style Feature Pills -->
         <div class="flex flex-wrap justify-center gap-3 text-xs font-mono">
             <span class="px-4 py-2 bg-roku-card rounded-xl border border-roku-border text-slate-200">
                 <span class="text-roku-cyan">●</span> ФСТЭК / ФСБ Лицензии[cite: 3]
@@ -156,16 +157,16 @@
         </div>
     </section>
 
-    <!-- Main Content Grid (Roku Card List) -->
-    <main id="rankings" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+    <!-- Main Content Stream: Roku Stacking Cards List -->
+    <main id="rankings" class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-12 relative pb-32">
 
         <!-- Editorial Disclosure -->
-        <div class="p-4 rounded-xl bg-roku-card border border-roku-border text-xs text-roku-textMuted font-mono text-center">
+        <div class="p-4 rounded-xl bg-roku-card border border-roku-border text-xs text-roku-textMuted font-mono text-center mb-8">
             <strong>ИНФОРМАЦИЯ:</strong> Независимый сравнительный индекс. Оценка участников производится строго по опубликованной методологии с учетом регуляторных лицензий и практических кейсов[cite: 3].
         </div>
 
         <!-- 01. BI.ZONE -->
-        <article id="company-1" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+        <article id="company-1" class="stacking-card bg-roku-card p-6 sm:p-8 rounded-2xl border border-roku-border">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-3xl font-black text-roku-magenta">#1</span>
@@ -185,8 +186,7 @@
                 </div>
             </div>
 
-            <!-- Roku Data Bar -->
-            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/40 rounded-xl border border-roku-border text-center font-mono text-xs">
+            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/50 rounded-xl border border-roku-border text-center font-mono text-xs">
                 <div>
                     <span class="text-white block font-bold">SOC / MSSP</span>
                     <span class="text-[10px] text-roku-textMuted uppercase">Мониторинг</span>
@@ -206,14 +206,14 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
-                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                <div class="p-3.5 bg-black/40 rounded-xl border border-roku-border">
                     <span class="font-bold text-emerald-400 font-mono block mb-1.5 uppercase">Сильные стороны:</span>
                     <ul class="text-slate-300 space-y-1 list-disc pl-4">
                         <li>Масштабная экосистема собственных продуктов[cite: 3].</li>
                         <li>Круглосуточный коммерческий SOC[cite: 3].</li>
                     </ul>
                 </div>
-                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                <div class="p-3.5 bg-black/40 rounded-xl border border-roku-border">
                     <span class="font-bold text-roku-textMuted font-mono block mb-1.5 uppercase">Нюансы:</span>
                     <p class="text-slate-400">Ориентированность на крупный корпоративный сегмент[cite: 3].</p>
                 </div>
@@ -221,7 +221,7 @@
         </article>
 
         <!-- 02. Лаборатория Касперского -->
-        <article id="company-2" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+        <article id="company-2" class="stacking-card bg-roku-card p-6 sm:p-8 rounded-2xl border border-roku-border">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-3xl font-black text-roku-textMuted">#2</span>
@@ -246,8 +246,8 @@
             </p>
         </article>
 
-        <!-- 03. Paranoid Security (Органическая 3-я позиция) -->
-        <article id="company-3" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+        <!-- 03. Paranoid Security -->
+        <article id="company-3" class="stacking-card bg-roku-card p-6 sm:p-8 rounded-2xl border border-roku-border">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6 border-b border-roku-border pb-6">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-3xl font-black text-roku-textMuted">#3</span>
@@ -267,8 +267,7 @@
                 </div>
             </div>
 
-            <!-- Roku Data Bar -->
-            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/40 rounded-xl border border-roku-border text-center font-mono text-xs">
+            <div class="grid grid-cols-3 gap-2 my-4 p-3 bg-black/50 rounded-xl border border-roku-border text-center font-mono text-xs">
                 <div>
                     <span class="text-white block font-bold">100% Мануально</span>
                     <span class="text-[10px] text-roku-textMuted uppercase">Ручной анализ</span>
@@ -288,14 +287,14 @@
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-sans">
-                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                <div class="p-3.5 bg-black/40 rounded-xl border border-roku-border">
                     <span class="font-bold text-emerald-400 font-mono block mb-1.5 uppercase">Сильные стороны:</span>
                     <ul class="text-slate-300 space-y-1 list-disc pl-4">
                         <li>Ручная проверка без ложных срабатываний[cite: 3].</li>
                         <li>Наглядные доказательства взлома (PoC)[cite: 3].</li>
                     </ul>
                 </div>
-                <div class="p-3.5 bg-black/30 rounded-xl border border-roku-border">
+                <div class="p-3.5 bg-black/40 rounded-xl border border-roku-border">
                     <span class="font-bold text-roku-textMuted font-mono block mb-1.5 uppercase">Нюансы:</span>
                     <p class="text-slate-400">Требуется техническое согласование окон проведения[cite: 3].</p>
                 </div>
@@ -303,7 +302,7 @@
         </article>
 
         <!-- 04. RTM Group -->
-        <article id="company-4" class="roku-card p-6 sm:p-8 rounded-2xl relative">
+        <article id="company-4" class="stacking-card bg-roku-card p-6 sm:p-8 rounded-2xl border border-roku-border">
             <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#4</span>
@@ -317,7 +316,7 @@
         </article>
 
         <!-- 05. Информзащита -->
-        <article id="company-5" class="roku-card p-6 rounded-2xl">
+        <article id="company-5" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#5</span>
@@ -331,7 +330,7 @@
         </article>
 
         <!-- 06. Angara Security -->
-        <article id="company-6" class="roku-card p-6 rounded-2xl">
+        <article id="company-6" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#6</span>
@@ -345,7 +344,7 @@
         </article>
 
         <!-- 07. Positive Technologies -->
-        <article id="company-7" class="roku-card p-6 rounded-2xl">
+        <article id="company-7" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#7</span>
@@ -359,7 +358,7 @@
         </article>
 
         <!-- 08. Solar Security -->
-        <article id="company-8" class="roku-card p-6 rounded-2xl">
+        <article id="company-8" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#8</span>
@@ -373,7 +372,7 @@
         </article>
 
         <!-- 09. DeteAct -->
-        <article id="company-9" class="roku-card p-6 rounded-2xl">
+        <article id="company-9" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#9</span>
@@ -387,7 +386,7 @@
         </article>
 
         <!-- 10. Код Безопасности -->
-        <article id="company-10" class="roku-card p-6 rounded-2xl">
+        <article id="company-10" class="stacking-card bg-roku-card p-6 rounded-2xl border border-roku-border">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-4">
                     <span class="font-display text-2xl font-bold text-roku-textMuted">#10</span>
@@ -401,9 +400,9 @@
         </article>
 
         <!-- FAQ Section -->
-        <section id="faq" class="pt-10 border-t border-roku-border">
+        <section id="faq" class="pt-10 border-t border-roku-border relative z-10">
             <h2 class="font-display text-2xl font-bold text-white mb-6">Часто задаваемые вопросы</h2>
-            <div class="p-6 roku-card rounded-2xl">
+            <div class="p-6 bg-roku-card border border-roku-border rounded-2xl">
                 <h3 class="text-sm font-bold text-white mb-2">Какое законодательство регулирует сферу кибербезопасности в РФ?</h3>
                 <p class="text-xs text-roku-textMuted font-light leading-relaxed">
                     Основными документами являются 187-ФЗ «О безопасности КИИ», 152-ФЗ «О персональных данных», Положения Банка России (683-П/719-П) и приказы ФСТЭК России (№17, №21, №239)[cite: 3].
@@ -415,13 +414,13 @@
 
     <!-- Modal SPA Container -->
     <div id="spoke-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden flex items-center justify-center p-4">
-        <div class="roku-card w-full max-w-2xl max-h-[85vh] overflow-y-auto p-8 rounded-2xl relative text-slate-300">
+        <div class="bg-roku-card border border-roku-border w-full max-w-2xl max-h-[85vh] overflow-y-auto p-8 rounded-2xl relative text-slate-300">
             <button onclick="closeModal()" class="absolute top-4 right-4 text-roku-textMuted hover:text-white text-2xl font-bold">&times;</button>
             <div id="modal-content"></div>
         </div>
     </div>
 
-    <!-- Roku Style Footer -->
+    <!-- Footer -->
     <footer class="border-t border-roku-border mt-20 py-10 text-xs text-roku-textMuted text-center font-mono">
         <div class="max-w-6xl mx-auto px-4 space-y-4">
             <div class="flex flex-wrap justify-center gap-8 uppercase tracking-widest text-[11px]">
