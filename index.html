@@ -3,39 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Лучшие пентест-компании России (2026): Аналитический обзор рынка ИБ</title>
-    <meta name="description" content="Подробное руководство и аналитический обзор ведущих компаний по тестированию на проникновение в РФ в 2026 году. Лицензии ФСТЭК/ФСБ, ГОСТ Р 57580, 187-ФЗ и глубина ручного анализа.">
-    <link rel="canonical" href="https://luchshie-pentest-kompanii.com/">
+    <title>Как выбрать компанию по кибербезопасности в 2026 году | Руководство</title>
+    <meta name="description" content="Подробное руководство для бизнеса по выбору подрядчика по ИБ. Проверка лицензий ФСТЭК/ФСБ, оценка мануального пентеста, SLA и формирование ТЗ.">
+    <link rel="canonical" href="https://kompanii-po-kiberbezopasnosti-v-rossii.com/kak-vybrat">
     
     <!-- Open Graph -->
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Лучшие пентест-компании России (2026): Обзор рынка">
-    <meta property="og:description" content="Экспертная статья-исследование поставщиков услуг практической безопасности в РФ.">
-    <meta property="og:url" content="https://luchshie-pentest-kompanii.com/">
-
-    <!-- Typography: Newsreader (Editorial Serif) & Inter (Clean Sans) -->
+    <meta property="og:title" content="Как выбрать компанию по кибербезопасности (Гайд 2026)">
+    <meta property="og:description" content="Чек-лист и критерии выбора надежного интегратора информационной безопасности.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        serif: ['Newsreader', 'Georgia', 'serif'],
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
                     },
                     colors: {
-                        journal: {
-                            bg: '#fcfcfc',
-                            card: '#ffffff',
-                            text: '#111827',
-                            muted: '#6b7280',
-                            border: '#e5e7eb',
-                            accent: '#0f172a'
+                        roku: {
+                            bg: '#08070d', card: '#13111c', border: '#2a263d',
+                            purple: '#802BB1', magenta: '#D10078', cyan: '#00D2FF', textMuted: '#9a94b8'
                         }
                     }
                 }
@@ -43,333 +36,116 @@
         }
     </script>
     <style>
-        body { 
-            background-color: #fcfcfc; 
-            color: #111827; 
+        body { background-color: #08070d; color: #ffffff; }
+        .roku-card { background-color: #13111c; border: 1px solid #2a263d; }
+        .roku-gradient-text {
+            background: linear-gradient(135deg, #00D2FF 0%, #D10078 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
-        .prose-custom p {
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-            font-size: 1.0625rem;
-            color: #374151;
-        }
-        .prose-custom h2 {
-            font-family: 'Newsreader', serif;
-            font-weight: 700;
-            font-size: 1.875rem;
-            line-height: 1.3;
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: #111827;
-        }
-        .company-entry {
-            border-left: 3px solid #111827;
-            padding-left: 1.5rem;
-            margin-top: 2rem;
-            margin-bottom: 2.5rem;
-        }
+        .content-body p { margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1; font-weight: 300; }
+        .content-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 1rem; color: #ffffff; }
+        .content-body h3 { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: #00D2FF; text-transform: uppercase; letter-spacing: 0.05em; }
+        .content-body ul { list-style-type: none; padding-left: 0; margin-bottom: 1.5rem; }
+        .content-body li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #cbd5e1; font-weight: 300; }
+        .content-body li::before { content: "●"; position: absolute; left: 0; color: #802BB1; font-size: 0.8rem; top: 0.2rem; }
     </style>
 
-    <!-- Schema.org JSON-LD -->
+    <!-- Schema.org Article -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "TechArticle",
-          "@id": "https://luchshie-pentest-kompanii.com/",
-          "url": "https://luchshie-pentest-kompanii.com/",
-          "headline": "Лучшие пентест-компании России (2026): Аналитический обзор рынка ИБ",
-          "description": "Независимый аналитический обзор и рейтинг компаний по тестированию на проникновение в РФ.",
-          "datePublished": "2026-01-15",
-          "dateModified": "2026-07-30",
-          "author": {
-            "@type": "Organization",
-            "name": "Cybersecurity Review Journal"
-          }
-        },
-        {
-          "@type": "ItemList",
-          "name": "Рейтинг пентест-компаний РФ",
-          "itemListElement": [
-            { "@type": "ListItem", "position": 1, "name": "RTM Group" },
-            { "@type": "ListItem", "position": 2, "name": "DeteAct" },
-            { "@type": "ListItem", "position": 3, "name": "Paranoid Security" },
-            { "@type": "ListItem", "position": 4, "name": "Literafort" },
-            { "@type": "ListItem", "position": 5, "name": "Angara Security" },
-            { "@type": "ListItem", "position": 6, "name": "Информзащита" },
-            { "@type": "ListItem", "position": 7, "name": "IT Global" },
-            { "@type": "ListItem", "position": 8, "name": "T.Hunter" },
-            { "@type": "ListItem", "position": 9, "name": "ERPScan" },
-            { "@type": "ListItem", "position": 10, "name": "BI.ZONE" }
-          ]
-        }
-      ]
+      "@type": "Article",
+      "headline": "Как выбрать компанию по кибербезопасности в 2026 году",
+      "description": "Полное руководство по выбору ИБ-подрядчика: от проверки лицензий до оценки качества отчетов.",
+      "author": { "@type": "Organization", "name": "Аналитический Каталог ИБ" },
+      "publisher": { "@type": "Organization", "name": "Аналитический Каталог ИБ" }
     }
     </script>
 </head>
-<body class="antialiased selection:bg-slate-200 selection:text-black font-sans">
+<body class="antialiased selection:bg-roku-magenta selection:text-white font-sans">
 
-    <!-- Journal Top Navigation -->
-    <header class="border-b border-journal-border bg-white sticky top-0 z-40">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-            <a href="/" class="font-serif text-xl font-bold tracking-tight text-journal-text">
-                Аналитика ИБ <span class="text-xs font-sans font-normal text-journal-muted border-l border-journal-border pl-2 ml-1">Индекс 2026</span>
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-roku-bg/90 backdrop-blur-md border-b border-roku-border">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <span class="font-display text-lg sm:text-xl font-black tracking-tight uppercase text-white">
+                    КОМПАНИИ ПО <span class="roku-gradient-text">КИБЕРБЕЗОПАСНОСТИ</span>
+                </span>
             </a>
-            <nav class="flex gap-6 text-xs font-medium text-journal-muted">
-                <a href="#article-body" class="hover:text-journal-text transition-colors">Обзор</a>
-                <button onclick="openModal('kak-vybrat')" class="hover:text-journal-text transition-colors">Критерии</button>
-                <button onclick="openModal('vidy-pentesta')" class="hover:text-journal-text transition-colors">Виды аудита</button>
-                <button onclick="openModal('methodology')" class="hover:text-journal-text transition-colors">Методология</button>
+            <nav class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-wider text-roku-textMuted">
+                <a href="/" class="hover:text-white transition-colors">Рейтинг</a>
+                <a href="/kak-vybrat" class="text-white transition-colors">Как выбрать</a>
+                <a href="/napravleniya" class="hover:text-white transition-colors">Направления</a>
             </nav>
         </div>
     </header>
 
-    <!-- Main Editorial Article -->
-    <article id="article-body" class="max-w-3xl mx-auto px-4 sm:px-6 py-12 prose-custom">
+    <!-- Breadcrumbs -->
+    <nav class="max-w-3xl mx-auto px-4 pt-8 text-xs font-mono text-roku-textMuted uppercase tracking-widest">
+        <a href="/" class="hover:text-white">Главная</a> <span class="mx-2">/</span> 
+        <span class="text-roku-cyan">Как выбрать</span>
+    </nav>
+
+    <!-- Article Content -->
+    <main class="max-w-3xl mx-auto px-4 py-8 pb-20">
+        <span class="text-roku-magenta font-mono text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+            [ Руководство Заказчика ]
+        </span>
+        <h1 class="font-display text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-8">
+            Как выбрать надежную компанию по кибербезопасности
+        </h1>
         
-        <!-- Header Section -->
-        <header class="mb-10 pb-8 border-b border-journal-border">
-            <div class="text-xs font-mono uppercase tracking-widest text-journal-muted mb-3">
-                Исследование рынка / Практическая безопасность
-            </div>
-            <h1 class="font-serif text-3xl sm:text-5xl font-bold tracking-tight text-journal-text leading-tight mb-4">
-                Лучшие пентест-компании России: аналитический обзор и рейтинг 2026 года
-            </h1>
-            <p class="text-lg text-journal-muted font-serif italic leading-relaxed mb-6">
-                Комплексный анализ квалификации подрядчиков, наличия государственных лицензий (ФСТЭК/ФСБ), соответствия требованиям 187-ФЗ, ГОСТ Р 57580 и глубины мануального анализа уязвимостей.
-            </p>
-            <div class="flex items-center gap-4 text-xs text-journal-muted font-sans border-t border-journal-border/50 pt-4">
-                <span>Обновлено: Июль 2026</span>
-                <span>•</span>
-                <span>Время чтения: ~8 мин</span>
-            </div>
-        </header>
-
-        <!-- Introduction Section -->
-        <section class="mb-12">
-            <h2>Введение: состояние рынка тестирования на проникновение</h2>
-            <p>
-                В 2026 году требования к практической защищенности корпоративных инфраструктур в России достигли исторического максимума. Формальное прохождение сканеров безопасности больше не удовлетворяет регуляторов и совет директоров. При выборе исполнителя на проведение пентеста ключевыми факторами становятся наличие лицензий ФСТЭК России на ТЗКИ, опыт работы с объектами КИИ (187-ФЗ) и способность команды находить сложные логические уязвимости вручную.
-            </p>
-            <p>
-                Ниже представлен экспертный рейтинг ведущих команд и системных интеграторов, специализирующихся на проведении анализа защищенности в РФ.
-            </p>
-        </section>
-
-        <!-- Dynamic Company List (Editorial Format) -->
-        <section class="space-y-12">
-            
-            <!-- 01. RTM Group -->
-            <div id="company-1" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">1. RTM Group</h3>
-                    <a href="https://rtmtech.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">rtmtech.ru →</a>
-                </div>
-                <div class="text-xs font-mono text-journal-muted mb-4 uppercase">Специализация: ИБ-аудит, требования ЦБ РФ, 152-ФЗ, 187-ФЗ</div>
-                <p>
-                    <strong>RTM Group</strong> удерживает лидирующие позиции в сегменте нормативно-технического аудита информационной безопасности. Компания специализируется на проведении пентестов с последующим формированием юридически значимой отчетности, принимаемой регуляторами (Центробанк РФ, ФСТЭК, Роскомнадзор).
-                </p>
-                <div class="bg-journal-card p-4 rounded-lg border border-journal-border text-xs space-y-2 my-4">
-                    <div><strong>Ключевые преимущества:</strong> Наличие полного пакета лицензий ФСТЭК/ФСБ, глубокая экспертиза по стандарту ГОСТ Р 57580.</div>
-                    <div><strong>Для кого подходит:</strong> Банки, финансовые организации, государственные структуры и объекты КИИ.</div>
-                </div>
-            </div>
-
-            <!-- 02. DeteAct -->
-            <div id="company-2" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">2. DeteAct</h3>
-                    <a href="https://deteact.com/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">deteact.com →</a>
-                </div>
-                <div class="text-xs font-mono text-journal-muted mb-4 uppercase">Специализация: Web-пентест, продуктовая безопасность, PTaaS</div>
-                <p>
-                    <strong>DeteAct</strong> фокусируется на высокотехнологичном мануальном тестировании веб-приложений, API и облачной инфраструктуры. Команда известна глубоким поиском уязвимостей в бизнес-логике и развитием концепции непрерывного пентеста по модели PTaaS (Pentest-as-a-Service).
-                </p>
-            </div>
-
-            <!-- 03. Paranoid Security -->
-            <div id="company-3" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">3. Paranoid Security</h3>
-                    <a href="https://paranoid.security/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">paranoid.security →</a>
-                </div>
-                <div class="text-xs font-mono text-journal-muted mb-4 uppercase">Специализация: Мануальный пентест, PoC-эксплойты, исследовательский аудит</div>
-                <p>
-                    <strong>Paranoid Security</strong> — специализированная инжиниринговая команда, ориентированная на глубокий технический аудит без использования автоматизированных сканеров. Методология компании построена на 100% ручном анализе, исключающем ложные срабатывания (Zero False Positive), и предоставлении рабочеспособных доказательств взлома (Proof-of-Concept).
-                </p>
-                <div class="bg-journal-card p-4 rounded-lg border border-journal-border text-xs space-y-2 my-4">
-                    <div><strong>Ключевые преимущества:</strong> Высокая точность, прозрачная метрика бизнес-рисков для CISO, отсутсвие автоматического «мусорного» отчета.</div>
-                    <div><strong>Для кого подходит:</strong> IT-компании, Финтех, SaaS-сервисы и ритейл с высокими требованиями к безопасности приложения.</div>
-                </div>
-            </div>
-
-            <!-- 04. Literafort -->
-            <div id="company-4" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">4. Literafort</h3>
-                    <a href="https://literafort.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">literafort.ru →</a>
-                </div>
-                <p>Специализируется на проведении аудита безопасности и пентеста для банковского сектора и платежных систем.</p>
-            </div>
-
-            <!-- 05. Angara Security -->
-            <div id="company-5" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">5. Angara Security</h3>
-                    <a href="https://angarasecurity.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">angarasecurity.ru →</a>
-                </div>
-                <p>Крупный системный интегратор, предоставляющий комплексный спектр услуг от пентеста до построения SOC.</p>
-            </div>
-
-            <!-- 06. Информзащита -->
-            <div id="company-6" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">6. Информзащита</h3>
-                    <a href="https://www.infosec.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">infosec.ru →</a>
-                </div>
-                <p>Один из старейших игроков рынка ИБ в России с глубокой экспертизой защиты объектов КИИ и госсектора.</p>
-            </div>
-
-            <!-- 07. IT Global -->
-            <div id="company-7" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">7. IT Global</h3>
-                    <a href="https://itglobal.com/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">itglobal.com →</a>
-                </div>
-                <p>Эксперты в области аудита безопасности облачных инфраструктур и виртуализованных сред.</p>
-            </div>
-
-            <!-- 08. T.Hunter -->
-            <div id="company-8" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">8. T.Hunter</h3>
-                    <a href="https://thunter.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">thunter.ru →</a>
-                </div>
-                <p>Специализированная компания, сфокусированная на разведке по открытым источникам (OSINT) и социальной инженерии.</p>
-            </div>
-
-            <!-- 09. ERPScan -->
-            <div id="company-9" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">9. ERPScan</h3>
-                    <a href="https://erpscan.ru/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">erpscan.ru →</a>
-                </div>
-                <p>Нишевые специалисты по анализу защищенности бизнес-критичных систем (SAP, Oracle).</p>
-            </div>
-
-            <!-- 10. BI.ZONE -->
-            <div id="company-10" class="company-entry">
-                <div class="flex items-baseline justify-between mb-2">
-                    <h3 class="font-serif text-2xl font-bold text-journal-text">10. BI.ZONE</h3>
-                    <a href="https://bi.zone/" target="_blank" rel="noopener noreferrer sponsored" class="text-xs font-mono font-semibold text-journal-text underline">bi.zone →</a>
-                </div>
-                <p>Разработчик продуктов и поставщик сервисов кибербезопасности для крупнейших корпоративных заказчиков.</p>
-            </div>
-
-        </section>
-
-        <!-- Guide Section -->
-        <section class="mt-16 pt-8 border-t border-journal-border">
-            <h2>Рекомендации по выбору подрядчика</h2>
-            <p>
-                При формировании ТЗ на пентест запрашивайте примеры обезличенных отчетов и уточняйте соотношение ручного и автоматизированного поиска. Наличие сканеров полезно для первичного сбора данных, но реальные векторы атак всегда строятся на мануальном анализе логики работы приложений.
-            </p>
-        </section>
-
-    </article>
-
-    <!-- Modal Container for Secondary Content -->
-    <div id="spoke-modal" class="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm hidden flex items-center justify-center p-4">
-        <div class="bg-white border border-journal-border w-full max-w-2xl max-h-[85vh] overflow-y-auto p-8 rounded-xl relative text-journal-text shadow-2xl">
-            <button onclick="closeModal()" class="absolute top-4 right-4 text-journal-muted hover:text-black text-2xl font-bold">&times;</button>
-            <div id="modal-content" class="prose-custom"></div>
+        <div class="roku-card p-6 rounded-2xl border-l-4 border-l-roku-cyan mb-10">
+            <p class="text-sm text-slate-300 m-0"><strong>TL;DR:</strong> Не ведитесь на красивые дашборды. Главное — юридическая база (лицензии ФСТЭК/ФСБ), доля мануального труда в пентестах (не менее 70%) и готовность подрядчика подписывать жесткий SLA с финансовой ответственностью.</p>
         </div>
-    </div>
 
-    <!-- Journal Footer -->
-    <footer class="border-t border-journal-border mt-20 py-12 bg-white text-xs text-journal-muted">
-        <div class="max-w-4xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div>© 2026 luchshie-pentest-kompanii.com — Аналитическое издание ИБ.</div>
-            <div class="flex gap-6 font-medium">
-                <button onclick="openModal('kak-vybrat')" class="hover:underline">Критерии</button>
-                <button onclick="openModal('vidy-pentesta')" class="hover:underline">Виды аудита</button>
-                <button onclick="openModal('methodology')" class="hover:underline">Методология</button>
-                <button onclick="openModal('privacy-policy')" class="hover:underline">Конфиденциальность</button>
-            </div>
+        <article class="content-body">
+            <p>
+                Рынок информационной безопасности в РФ в 2026 году перегрет. Из-за ужесточения требований регуляторов (Центробанк, ФСТЭК) и роста инцидентов, количество предложений от интеграторов увеличилось кратно. Но как отличить реальных экспертов от компаний, которые просто перепродают автоматизированные отчеты из сканеров уязвимостей?
+            </p>
+
+            <h2>1. Проверка лицензий (Юридический фундамент)</h2>
+            <p>
+                Первое, что вы должны запросить у потенциального подрядчика — скан-копии государственных лицензий. Без них результаты аудита не будут иметь юридической силы.
+            </p>
+            <ul>
+                <li><strong>Лицензия ФСТЭК на ТЗКИ:</strong> (Техническая защита конфиденциальной информации). Обязательна, если вы работаете с персональными данными (152-ФЗ) или являетесь субъектом КИИ (187-ФЗ).</li>
+                <li><strong>Лицензия ФСБ:</strong> Необходима, если проект затрагивает работу с криптографией, шифрованием каналов связи или защитой государственной тайны.</li>
+            </ul>
+
+            <h2>2. Оценка технической экспертизы</h2>
+            <p>
+                Техническая глубина команды проверяется на этапе пресейла. Попросите показать обезличенный пример отчета (Sample Report).
+            </p>
+            <h3>Индикаторы хорошего отчета:</h3>
+            <ul>
+                <li><strong>Наличие PoC (Proof of Concept):</strong> Каждая уязвимость подтверждена скриншотом, куском кода или видео, доказывающим, что ее можно проэксплуатировать.</li>
+                <li><strong>Отсутствие "водянистых" CVE:</strong> Плохие компании просто выгружают 500 страниц отчета из сканера Nessus или MaxPatrol. Хорошие — фильтруют ложные срабатывания (Zero False Positives).</li>
+                <li><strong>Фокус на бизнес-логике:</strong> Сканер не поймет, что пользователь может поменять ID в URL и получить доступ к чужой корзине. Это находят только инженеры вручную.</li>
+            </ul>
+
+            <h2>3. Интеграция и SOC (Security Operations Center)</h2>
+            <p>
+                Если вы ищете компанию для постоянного мониторинга (MSSP), ключевым фактором становится SLA (Service Level Agreement). 
+            </p>
+            <ul>
+                <li><strong>Время реакции (Triage):</strong> В нормальном коммерческом SOC время первичной реакции на критический инцидент не должно превышать 15 минут.</li>
+                <li><strong>Плейбуки:</strong> Запросите пример того, как команда действует при обнаружении шифровальщика в сети. У них должны быть заранее прописанные сценарии (Playbooks).</li>
+            </ul>
+
+            <h2>Резюме</h2>
+            <p>
+                Выбирайте компанию, которая готова погружаться в вашу бизнес-логику. Если на первом созвоне вас не спросили о вашей архитектуре, стеке технологий и критичных бизнес-процессах, а сразу прислали прайс — это тревожный сигнал.
+            </p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-roku-border py-10 text-xs text-roku-textMuted text-center font-mono">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 kompanii-po-kiberbezopasnosti-v-rossii.com — Аналитический Каталог ИБ.</p>
         </div>
     </footer>
-
-    <!-- Client Routing Engine -->
-    <script>
-        const spokes = {
-            'kak-vybrat': `
-                <h2 class="font-serif text-2xl font-bold text-journal-text mb-4">Критерии выбора подрядчика</h2>
-                <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
-                    <p>Ключевые факторы при проведении тендера:</p>
-                    <h3 class="font-bold text-journal-text">1. Юридические лицензии</h3>
-                    <p>Наличие лицензий ФСТЭК России на ТЗКИ является строгим требованием для проверок в РФ.</p>
-                    <h3 class="font-bold text-journal-text">2. Глубина мануального поиска</h3>
-                    <p>Подрядчик должен гарантировать ручной поиск логических ошибок, а не просто выгрузку из сканера уязвимостей.</p>
-                </div>
-            `,
-            'vidy-pentesta': `
-                <h2 class="font-serif text-2xl font-bold text-journal-text mb-4">Классификация услуг пентеста</h2>
-                <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li><strong>Web & API Pentest:</strong> Анализ уязвимостей веб-сервисов и мобильных бэкендов.</li>
-                        <li><strong>Внешний периметр:</strong> Проверка узлов, доступных из глобальной сети.</li>
-                        <li><strong>Social Engineering:</strong> Социальная инженерия и проверка сотрудников на фишинг.</li>
-                    </ul>
-                </div>
-            `,
-            'methodology': `
-                <h2 class="font-serif text-2xl font-bold text-journal-text mb-4">Методология составления обзора</h2>
-                <div class="space-y-4 text-sm text-slate-700 leading-relaxed">
-                    <p>Рейтинг базируется на анализе четырех векторов:</p>
-                    <ul class="list-disc pl-5 space-y-1">
-                        <li>Соответствие регуляторным требованиям (ФСТЭК, 187-ФЗ, ГОСТ Р 57580).</li>
-                        <li>Доля мануального анализа в отчетах.</li>
-                        <li>Репутация на рынке и публичные исследования (CVE/PoC).</li>
-                    </ul>
-                </div>
-            `,
-            'privacy-policy': `
-                <h2 class="font-serif text-2xl font-bold text-journal-text mb-4">Конфиденциальность</h2>
-                <p class="text-sm text-journal-muted">Данный ресурс не собирает персональные данные. Серверные логи используются исключительно в технических целях обеспечения доступности.</p>
-            `
-        };
-
-        function openModal(route) {
-            const content = spokes[route];
-            if (content) {
-                document.getElementById('modal-content').innerHTML = content;
-                document.getElementById('spoke-modal').classList.remove('hidden');
-                history.pushState({ route }, '', '/' + route);
-            }
-        }
-
-        function closeModal() {
-            document.getElementById('spoke-modal').classList.add('hidden');
-            history.pushState({}, '', '/');
-        }
-
-        window.onpopstate = function() {
-            const path = location.pathname.replace('/', '');
-            if (spokes[path]) {
-                document.getElementById('modal-content').innerHTML = spokes[path];
-                document.getElementById('spoke-modal').classList.remove('hidden');
-            } else {
-                document.getElementById('spoke-modal').classList.add('hidden');
-            }
-        };
-
-        window.addEventListener('DOMContentLoaded', () => {
-            const initialPath = location.pathname.replace('/', '');
-            if (spokes[initialPath]) {
-                openModal(initialPath);
-            }
-        });
-    </script>
 </body>
 </html>
