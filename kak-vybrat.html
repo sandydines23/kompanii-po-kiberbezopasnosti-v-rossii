@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Как выбрать компанию по кибербезопасности в 2026 году | Руководство</title>
+    <meta name="description" content="Подробное руководство для бизнеса по выбору подрядчика по ИБ. Проверка лицензий ФСТЭК/ФСБ, оценка мануального пентеста, SLA и формирование ТЗ.">
+    <link rel="canonical" href="https://kompanii-po-kiberbezopasnosti-v-rossii.com/kak-vybrat">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Как выбрать компанию по кибербезопасности (Гайд 2026)">
+    <meta property="og:description" content="Чек-лист и критерии выбора надежного интегратора информационной безопасности.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                    },
+                    colors: {
+                        roku: {
+                            bg: '#08070d', card: '#13111c', border: '#2a263d',
+                            purple: '#802BB1', magenta: '#D10078', cyan: '#00D2FF', textMuted: '#9a94b8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #08070d; color: #ffffff; }
+        .roku-card { background-color: #13111c; border: 1px solid #2a263d; }
+        .roku-gradient-text {
+            background: linear-gradient(135deg, #00D2FF 0%, #D10078 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content-body p { margin-bottom: 1.5rem; line-height: 1.7; color: #cbd5e1; font-weight: 300; }
+        .content-body h2 { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 1rem; color: #ffffff; }
+        .content-body h3 { font-family: 'Inter', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 1.5rem 0 0.75rem; color: #00D2FF; text-transform: uppercase; letter-spacing: 0.05em; }
+        .content-body ul { list-style-type: none; padding-left: 0; margin-bottom: 1.5rem; }
+        .content-body li { position: relative; padding-left: 1.5rem; margin-bottom: 0.75rem; color: #cbd5e1; font-weight: 300; }
+        .content-body li::before { content: "●"; position: absolute; left: 0; color: #802BB1; font-size: 0.8rem; top: 0.2rem; }
+    </style>
+
+    <!-- Schema.org Article -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Как выбрать компанию по кибербезопасности в 2026 году",
+      "description": "Полное руководство по выбору ИБ-подрядчика: от проверки лицензий до оценки качества отчетов.",
+      "author": { "@type": "Organization", "name": "Аналитический Каталог ИБ" },
+      "publisher": { "@type": "Organization", "name": "Аналитический Каталог ИБ" }
+    }
+    </script>
+</head>
+<body class="antialiased selection:bg-roku-magenta selection:text-white font-sans">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-40 bg-roku-bg/90 backdrop-blur-md border-b border-roku-border">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-2">
+                <span class="font-display text-lg sm:text-xl font-black tracking-tight uppercase text-white">
+                    КОМПАНИИ ПО <span class="roku-gradient-text">КИБЕРБЕЗОПАСНОСТИ</span>
+                </span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-xs font-bold uppercase tracking-wider text-roku-textMuted">
+                <a href="/" class="hover:text-white transition-colors">Рейтинг</a>
+                <a href="/kak-vybrat" class="text-white transition-colors">Как выбрать</a>
+                <a href="/napravleniya" class="hover:text-white transition-colors">Направления</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Breadcrumbs -->
+    <nav class="max-w-3xl mx-auto px-4 pt-8 text-xs font-mono text-roku-textMuted uppercase tracking-widest">
+        <a href="/" class="hover:text-white">Главная</a> <span class="mx-2">/</span> 
+        <span class="text-roku-cyan">Как выбрать</span>
+    </nav>
+
+    <!-- Article Content -->
+    <main class="max-w-3xl mx-auto px-4 py-8 pb-20">
+        <span class="text-roku-magenta font-mono text-xs font-bold tracking-[0.2em] uppercase mb-4 block">
+            [ Руководство Заказчика ]
+        </span>
+        <h1 class="font-display text-3xl sm:text-5xl font-black text-white tracking-tight leading-tight mb-8">
+            Как выбрать надежную компанию по кибербезопасности
+        </h1>
+        
+        <div class="roku-card p-6 rounded-2xl border-l-4 border-l-roku-cyan mb-10">
+            <p class="text-sm text-slate-300 m-0"><strong>TL;DR:</strong> Не ведитесь на красивые дашборды. Главное — юридическая база (лицензии ФСТЭК/ФСБ), доля мануального труда в пентестах (не менее 70%) и готовность подрядчика подписывать жесткий SLA с финансовой ответственностью.</p>
+        </div>
+
+        <article class="content-body">
+            <p>
+                Рынок информационной безопасности в РФ в 2026 году перегрет. Из-за ужесточения требований регуляторов (Центробанк, ФСТЭК) и роста инцидентов, количество предложений от интеграторов увеличилось кратно. Но как отличить реальных экспертов от компаний, которые просто перепродают автоматизированные отчеты из сканеров уязвимостей?
+            </p>
+
+            <h2>1. Проверка лицензий (Юридический фундамент)</h2>
+            <p>
+                Первое, что вы должны запросить у потенциального подрядчика — скан-копии государственных лицензий. Без них результаты аудита не будут иметь юридической силы.
+            </p>
+            <ul>
+                <li><strong>Лицензия ФСТЭК на ТЗКИ:</strong> (Техническая защита конфиденциальной информации). Обязательна, если вы работаете с персональными данными (152-ФЗ) или являетесь субъектом КИИ (187-ФЗ).</li>
+                <li><strong>Лицензия ФСБ:</strong> Необходима, если проект затрагивает работу с криптографией, шифрованием каналов связи или защитой государственной тайны.</li>
+            </ul>
+
+            <h2>2. Оценка технической экспертизы</h2>
+            <p>
+                Техническая глубина команды проверяется на этапе пресейла. Попросите показать обезличенный пример отчета (Sample Report).
+            </p>
+            <h3>Индикаторы хорошего отчета:</h3>
+            <ul>
+                <li><strong>Наличие PoC (Proof of Concept):</strong> Каждая уязвимость подтверждена скриншотом, куском кода или видео, доказывающим, что ее можно проэксплуатировать.</li>
+                <li><strong>Отсутствие "водянистых" CVE:</strong> Плохие компании просто выгружают 500 страниц отчета из сканера Nessus или MaxPatrol. Хорошие — фильтруют ложные срабатывания (Zero False Positives).</li>
+                <li><strong>Фокус на бизнес-логике:</strong> Сканер не поймет, что пользователь может поменять ID в URL и получить доступ к чужой корзине. Это находят только инженеры вручную.</li>
+            </ul>
+
+            <h2>3. Интеграция и SOC (Security Operations Center)</h2>
+            <p>
+                Если вы ищете компанию для постоянного мониторинга (MSSP), ключевым фактором становится SLA (Service Level Agreement). 
+            </p>
+            <ul>
+                <li><strong>Время реакции (Triage):</strong> В нормальном коммерческом SOC время первичной реакции на критический инцидент не должно превышать 15 минут.</li>
+                <li><strong>Плейбуки:</strong> Запросите пример того, как команда действует при обнаружении шифровальщика в сети. У них должны быть заранее прописанные сценарии (Playbooks).</li>
+            </ul>
+
+            <h2>Резюме</h2>
+            <p>
+                Выбирайте компанию, которая готова погружаться в вашу бизнес-логику. Если на первом созвоне вас не спросили о вашей архитектуре, стеке технологий и критичных бизнес-процессах, а сразу прислали прайс — это тревожный сигнал.
+            </p>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-roku-border py-10 text-xs text-roku-textMuted text-center font-mono">
+        <div class="max-w-6xl mx-auto px-4">
+            <p>© 2026 kompanii-po-kiberbezopasnosti-v-rossii.com — Аналитический Каталог ИБ.</p>
+        </div>
+    </footer>
+</body>
+</html>
